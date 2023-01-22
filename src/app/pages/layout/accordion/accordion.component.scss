@@ -1,0 +1,11 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  .accordion-container:first-child {
+    margin-bottom: nb-theme(card-margin-bottom);
+  }
+  .fa{
+    font-size:20px;color:white;
+    margin-right:5px
+  }
+}

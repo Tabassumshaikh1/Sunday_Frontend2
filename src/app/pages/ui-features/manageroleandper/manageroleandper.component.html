@@ -1,0 +1,54 @@
+<div>
+    <input type="text" class="ip"  placeholder="Search Anything Here..">
+  </div>
+  <br>
+<!-- <p *ngFor="let uu of userlist"> -->
+    <div id="accordion" >
+        <div class="card" *ngFor="let uu of userlist">
+          <div class="card-header">
+            
+            <a class="btn"  data-bs-toggle="collapse" href="#collapseOne">
+              {{uu.name}}
+            </a>
+        
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+               
+           <div style="display: flex;
+           justify-content: space-evenly;
+           font-size: 18px;
+           margin-left: 36px;">
+            <div>Admin</div>
+            <div>User</div>
+            <div>Executive</div>
+            <div>Field Executive</div>
+            </div>
+        Permission : 
+        <div style="display:flex; justify-content:space-evenly">
+           
+           <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox"  style="height:26px; width:50px" role="switch" id="switchCheckChecked" checked />
+           
+          </div>
+         
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" style="height:26px; width:50px" role="switch" id="switchCheckChecked" checked />
+           
+          </div><div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" style="height:26px; width:50px" role="switch" id="switchCheckChecked" checked />
+           
+          </div><div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" style="height:26px; width:50px" role="switch" id="switchCheckChecked" checked />
+           
+          </div>
+          </div>
+            </div>
+          </div>
+          
+       
+        </div>
+    </div>
+     
+ 
+    
